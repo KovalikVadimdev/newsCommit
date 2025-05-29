@@ -1,0 +1,1 @@
+-w -d C:/My_Designs/test/test/compile -s C:/My_Designs/test/library.cfg -j C:/My_Designs/test/test/projlib.cfg -work test -O3 -e 100 -work test -2002 C:/My_Designs/test/test/src/OA_I.vhd C:/My_Designs/test/test/src/OA_I_tb.vhd 

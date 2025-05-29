@@ -1,0 +1,8 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+acom -O3 -e 100 -work test -2002  $dsn/src/OA_I.vhd $dsn/src/OA_I_tb.vhd
+# Compile Entity "OA_I"
+# Compile Architecture "OA_I" of Entity "OA_I"
+# Compile Entity "OA_I_tb"
+# Compile Architecture "OA_I_tb" of Entity "OA_I_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]

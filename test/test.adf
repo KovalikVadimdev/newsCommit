@@ -1,0 +1,32 @@
+[Project]
+Current Flow=Multivendor
+VCS=0
+version=4
+Current Config=compile
+[Configurations]
+compile=test
+[Library]
+test=.\test\test.lib
+[$LibMap$]
+test=.
+Active_lib=
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=ONLY_IMPL
+ON_SERVERFARM_SYNTH=0
+ON_SERVERFARM_IMPL=0
+ON_SERVERFARM_SIM=0
+[IMPLEMENTATION]
+UCF=
+[Files]
+/OA_I.vhd=-1
+/OA_I_tb.vhd=-1
+[Files.Data]
+.\src\OA_I.vhd=VHDL Source Code
+.\src\OA_I_tb.vhd=VHDL Source Code
+[HierarchyViewer]
+HierarchyInformation=oa_i_tb|oa_i_tb|0
+ShowHide=ShowTopLevel
+Selected=

@@ -9,7 +9,7 @@ entity OA_I is
 		rst : in STD_LOGIC;
 		d1 : in STD_LOGIC_VECTOR(7 downto 0);
 		d2 : in STD_LOGIC_VECTOR(7 downto 0);
-		y : in STD_LOGIC_VECTOR(18 downto 1);
+		y : in STD_LOGIC_VECTOR(19 downto 1);
 		r : out STD_LOGIC_VECTOR(15 downto 0);
 		x : out STD_LOGIC_VECTOR(5 downto 1)
 	);
@@ -43,7 +43,7 @@ begin
 			C <= Cin;
 			
 			if y(4) = '1' then
-				CnT <= 7;
+				CnT <= 8;
 			elsif y(8) = '1' then 
 				CnT <= CnT - 1;
 			elsif y(13) = '1' then
@@ -89,11 +89,12 @@ begin
 			C(6 downto 0)&"0" when y(15) = '1' else
 			C; 
 			
-	x(1) <= cop;
-	x(2) <= B(0);
-	x(3) <= OF1;	
+	x(1) <= '1' when cop = '1' else '0';
+	x(2) <= '1' when B(0) = '1' else '0';
+	x(3) <= '1' when OF1 = '1' else '0';	
 	x(4) <= '1' when Cnt = 0 else '0';
-	x(5) <= TgB; 
+	x(5) <= '1' when TgB = '1' else '0'; 
 	
-	R <= C(7 downto 0) & B(7 downto 0);
+	R <= C(7 downto 0) & B(7 downto 0) when y(12) = '1' else
+		"00000000" & C(7 downto 0) when y(19) = '1' else (others => 'Z');
 end OA_I;

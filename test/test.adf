@@ -23,8 +23,10 @@ UCF=
 [Files]
 /OA_I.vhd=-1
 /OA_I_tb.vhd=-1
+/OA_I_tb.vhd=-1
 [Files.Data]
 .\src\OA_I.vhd=VHDL Source Code
+.\src\OA_I_tb.vhd=VHDL Source Code
 .\src\OA_I_tb.vhd=VHDL Source Code
 [HierarchyViewer]
 HierarchyInformation=oa_i_tb|oa_i_tb|0

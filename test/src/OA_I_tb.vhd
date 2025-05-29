@@ -16,7 +16,7 @@ architecture OA_I_tb of OA_I_tb is
 		rst : in STD_LOGIC;
 		d1 : in STD_LOGIC_VECTOR(7 downto 0);
 		d2 : in STD_LOGIC_VECTOR(7 downto 0);
-		y : in STD_LOGIC_VECTOR(18 downto 1);
+		y : in STD_LOGIC_VECTOR(19 downto 1);
 		r : out STD_LOGIC_VECTOR(15 downto 0);
 		x : out STD_LOGIC_VECTOR(5 downto 1)
 	);
@@ -27,7 +27,7 @@ architecture OA_I_tb of OA_I_tb is
 	signal rst : STD_LOGIC;
 	signal d1 : STD_LOGIC_VECTOR(7 downto 0);
 	signal d2 : STD_LOGIC_VECTOR(7 downto 0);
-	signal y : STD_LOGIC_VECTOR(18 downto 1);
+	signal y : STD_LOGIC_VECTOR(19 downto 1);
 	signal x : STD_LOGIC_VECTOR(5 downto 1);
 
 	signal T : time := 20 ns;
@@ -63,8 +63,38 @@ begin
 		y <= (1 => '1', 2 => '1', 3 => '1', 4 => '1', others => '0');
 		wait for T;
 		y <= (6 => '1', 7 => '1', 8 => '1', others => '0');
-		
-		
+		wait for T;
+		y <= (10 => '1', others => '0');
+		wait for T;
+		y <= (5 => '1', others => '0');
+		wait for T;
+		y <= (6 => '1', 7 => '1', 8 => '1', others => '0');
+		wait for T;
+		y <= (10 => '1', others => '0');
+		wait for T;
+		y <= (6 => '1', 7 => '1', 8 => '1', others => '0');
+		wait for T;
+		y <= (10 => '1', others => '0');
+		wait for T;
+		y <= (6 => '1', 7 => '1', 8 => '1', others => '0');
+		wait for T;
+		y <= (10 => '1', others => '0');
+		wait for T;
+		y <= (6 => '1', 7 => '1', 8 => '1', others => '0');
+		wait for T;
+		y <= (10 => '1', others => '0');
+		wait for T;
+		y <= (6 => '1', 7 => '1', 8 => '1', others => '0');	
+		wait for T;
+		y <= (10 => '1', others => '0');
+		wait for T;
+		y <= (6 => '1', 7 => '1', 8 => '1', others => '0');
+		wait for T;
+		y <= (10 => '1', others => '0');
+		wait for T;
+		y <= (6 => '1', 7 => '1', 8 => '1', others => '0');
+		wait for T;
+		y <= (12 => '1', others => '0');
 		
 		wait;
 	end process;

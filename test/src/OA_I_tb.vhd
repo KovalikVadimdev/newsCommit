@@ -53,49 +53,30 @@ begin
 	
 	stim_proc: process
 	begin
-		cop <= '0';
+		cop <= '1';
 		rst <= '1';
 		d1 <= "00000010";
 		d2 <= "00000010";
 		wait for T;
 		rst <= '0';
 		wait for T;
-		y <= (1 => '1', 2 => '1', 3 => '1', 4 => '1', others => '0');
+		y <= (3 => '1', 1 => '1', 13 => '1', others => '0');
 		wait for T;
-		y <= (6 => '1', 7 => '1', 8 => '1', others => '0');
+		y <= (14 => '1', others => '0');
 		wait for T;
-		y <= (10 => '1', others => '0');
+		y <= (15 => '1', 16 => '1', others => '0');
 		wait for T;
-		y <= (5 => '1', others => '0');
+		y <= (17 => '1', 16 => '1', others => '0');
 		wait for T;
-		y <= (6 => '1', 7 => '1', 8 => '1', others => '0');
+		y <= (15 => '1', 16 => '1', others => '0');
 		wait for T;
-		y <= (10 => '1', others => '0');
+		y <= (15 => '1', 16 => '1', others => '0');
 		wait for T;
-		y <= (6 => '1', 7 => '1', 8 => '1', others => '0');
+		y <= (18 => '1', 8 => '1', others => '0');
 		wait for T;
-		y <= (10 => '1', others => '0');
+		y <= (14 => '1', others => '0');
 		wait for T;
-		y <= (6 => '1', 7 => '1', 8 => '1', others => '0');
-		wait for T;
-		y <= (10 => '1', others => '0');
-		wait for T;
-		y <= (6 => '1', 7 => '1', 8 => '1', others => '0');
-		wait for T;
-		y <= (10 => '1', others => '0');
-		wait for T;
-		y <= (6 => '1', 7 => '1', 8 => '1', others => '0');	
-		wait for T;
-		y <= (10 => '1', others => '0');
-		wait for T;
-		y <= (6 => '1', 7 => '1', 8 => '1', others => '0');
-		wait for T;
-		y <= (10 => '1', others => '0');
-		wait for T;
-		y <= (6 => '1', 7 => '1', 8 => '1', others => '0');
-		wait for T;
-		y <= (12 => '1', others => '0');
-		
+		y <= (19 => '1', others => '0');
 		wait;
 	end process;
 

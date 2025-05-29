@@ -1,0 +1,338 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+acom -O3 -e 100 -work test -2002  $dsn/src/OA_I.vhd $dsn/src/OA_I_tb.vhd
+# Compile Entity "OA_I"
+# Compile Architecture "OA_I" of Entity "OA_I"
+# Compile Entity "OA_I_tb"
+# Compile Architecture "OA_I_tb" of Entity "OA_I_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+acom -O3 -e 100 -work test -2002  $dsn/src/OA_I.vhd $dsn/src/OA_I_tb.vhd
+# Compile Entity "OA_I"
+# Compile Architecture "OA_I" of Entity "OA_I"
+# Compile Entity "OA_I_tb"
+# Compile Architecture "OA_I_tb" of Entity "OA_I_tb"
+# Error: ELAB1_0028: OA_I_tb.vhd : (36, 0): Entity port length is 19. y length is 18.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  78.0 [ms]
+acom -O3 -e 100 -work test -2002  $dsn/src/OA_I.vhd $dsn/src/OA_I_tb.vhd
+# Compile Entity "OA_I"
+# Compile Architecture "OA_I" of Entity "OA_I"
+# Compile Entity "OA_I_tb"
+# Compile Architecture "OA_I_tb" of Entity "OA_I_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+acom -O3 -e 100 -work test -2002  $dsn/src/OA_I.vhd $dsn/src/OA_I_tb.vhd
+# Compile Entity "OA_I"
+# Compile Architecture "OA_I" of Entity "OA_I"
+# Compile Entity "OA_I_tb"
+# Compile Architecture "OA_I_tb" of Entity "OA_I_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+asim -O5 +access +r +m+oa_i_tb oa_i_tb oa_i_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6561 kB (elbread=427 elab2=5995 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\test\test\src\wave.asdb
+#  5:20 PM, Thursday, May 29, 2025
+#  Simulation has been initialized
+# VSIM: 8 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/test/test/src/wave.asdb'.
+# VSIM: 23 object(s) traced.
+run 200 ns
+# KERNEL: stopped at time: 200 ns
+run 200 ns
+# RUNTIME: Fatal Error: RUNTIME_0067 OA_I.vhd (48): Value -1 out of range (0 to 8).
+# KERNEL: Time: 210 ns,  Iteration: 1,  Instance: /OA_I_tb/UUT,  Process: line__32.
+# KERNEL: Stopped at time 210 ns + 1.
+# VSIM: Error: Fatal error occurred during simulation.
+acom -O3 -e 100 -work test -2002  $dsn/src/OA_I.vhd $dsn/src/OA_I_tb.vhd
+# Compile Entity "OA_I"
+# Compile Architecture "OA_I" of Entity "OA_I"
+# Compile Entity "OA_I_tb"
+# Compile Architecture "OA_I_tb" of Entity "OA_I_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6561 kB (elbread=427 elab2=5995 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\test\test\src\wave.asdb
+#  5:21 PM, Thursday, May 29, 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/test/test/src/wave.asdb'.
+run 200 ns
+# KERNEL: stopped at time: 200 ns
+acom -O3 -e 100 -work test -2002  $dsn/src/OA_I.vhd $dsn/src/OA_I_tb.vhd
+# Compile Entity "OA_I"
+# Compile Architecture "OA_I" of Entity "OA_I"
+# Compile Entity "OA_I_tb"
+# Compile Architecture "OA_I_tb" of Entity "OA_I_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6561 kB (elbread=427 elab2=5995 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\test\test\src\wave.asdb
+#  5:21 PM, Thursday, May 29, 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/test/test/src/wave.asdb'.
+run 200 ns
+# KERNEL: stopped at time: 200 ns
+acom -O3 -e 100 -work test -2002  $dsn/src/OA_I.vhd $dsn/src/OA_I_tb.vhd
+# Compile Entity "OA_I"
+# Compile Architecture "OA_I" of Entity "OA_I"
+# Compile Entity "OA_I_tb"
+# Compile Architecture "OA_I_tb" of Entity "OA_I_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  93.0 [ms]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6561 kB (elbread=427 elab2=5995 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\test\test\src\wave.asdb
+#  5:22 PM, Thursday, May 29, 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/test/test/src/wave.asdb'.
+run 200 ns
+# KERNEL: stopped at time: 200 ns
+acom -O3 -e 100 -work test -2002  $dsn/src/OA_I.vhd $dsn/src/OA_I_tb.vhd
+# Compile Entity "OA_I"
+# Compile Architecture "OA_I" of Entity "OA_I"
+# Compile Entity "OA_I_tb"
+# Compile Architecture "OA_I_tb" of Entity "OA_I_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  94.0 [ms]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6562 kB (elbread=427 elab2=5995 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\test\test\src\wave.asdb
+#  5:25 PM, Thursday, May 29, 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/test/test/src/wave.asdb'.
+run 200 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 100 ns,  Iteration: 1,  Instance: /OA_I_tb/UUT,  Process: line__75.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 100 ns,  Iteration: 1,  Instance: /OA_I_tb/UUT,  Process: line__75.
+# KERNEL: stopped at time: 200 ns
+acom -O3 -e 100 -work test -2002  $dsn/src/OA_I.vhd $dsn/src/OA_I_tb.vhd
+# Compile Entity "OA_I"
+# Compile Architecture "OA_I" of Entity "OA_I"
+# Compile Entity "OA_I_tb"
+# Compile Architecture "OA_I_tb" of Entity "OA_I_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6564 kB (elbread=427 elab2=5997 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\test\test\src\wave.asdb
+#  5:26 PM, Thursday, May 29, 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/test/test/src/wave.asdb'.
+run 200 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 100 ns,  Iteration: 1,  Instance: /OA_I_tb/UUT,  Process: line__75.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 100 ns,  Iteration: 1,  Instance: /OA_I_tb/UUT,  Process: line__75.
+# KERNEL: stopped at time: 200 ns
+run 200 ns
+# RUNTIME: Fatal Error: RUNTIME_0067 OA_I.vhd (48): Value -1 out of range (0 to 8).
+# KERNEL: Time: 330 ns,  Iteration: 1,  Instance: /OA_I_tb/UUT,  Process: line__32.
+# KERNEL: Stopped at time 330 ns + 1.
+# VSIM: Error: Fatal error occurred during simulation.
+acom -O3 -e 100 -work test -2002  $dsn/src/OA_I.vhd $dsn/src/OA_I_tb.vhd
+# Compile Entity "OA_I"
+# Compile Architecture "OA_I" of Entity "OA_I"
+# Compile Entity "OA_I_tb"
+# Compile Architecture "OA_I_tb" of Entity "OA_I_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  79.0 [ms]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6565 kB (elbread=427 elab2=5998 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\test\test\src\wave.asdb
+#  5:29 PM, Thursday, May 29, 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/test/test/src/wave.asdb'.
+run 200 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 100 ns,  Iteration: 1,  Instance: /OA_I_tb/UUT,  Process: line__75.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 100 ns,  Iteration: 1,  Instance: /OA_I_tb/UUT,  Process: line__75.
+# KERNEL: stopped at time: 200 ns
+run 200 ns
+# RUNTIME: Fatal Error: RUNTIME_0067 OA_I.vhd (48): Value -1 out of range (0 to 8).
+# KERNEL: Time: 370 ns,  Iteration: 1,  Instance: /OA_I_tb/UUT,  Process: line__32.
+# KERNEL: Stopped at time 370 ns + 1.
+# VSIM: Error: Fatal error occurred during simulation.
+acom -O3 -e 100 -work test -2002  $dsn/src/OA_I.vhd $dsn/src/OA_I_tb.vhd
+# Compile Entity "OA_I"
+# Compile Architecture "OA_I" of Entity "OA_I"
+# Compile Entity "OA_I_tb"
+# Compile Architecture "OA_I_tb" of Entity "OA_I_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6565 kB (elbread=427 elab2=5998 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\test\test\src\wave.asdb
+#  5:32 PM, Thursday, May 29, 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/test/test/src/wave.asdb'.
+run 200 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 100 ns,  Iteration: 1,  Instance: /OA_I_tb/UUT,  Process: line__75.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 100 ns,  Iteration: 1,  Instance: /OA_I_tb/UUT,  Process: line__75.
+# KERNEL: stopped at time: 200 ns
+run 200 ns
+# RUNTIME: Fatal Error: RUNTIME_0067 OA_I.vhd (48): Value -1 out of range (0 to 8).
+# KERNEL: Time: 390 ns,  Iteration: 1,  Instance: /OA_I_tb/UUT,  Process: line__32.
+# KERNEL: Stopped at time 390 ns + 1.
+# VSIM: Error: Fatal error occurred during simulation.
+run 200 ns
+acom -O3 -e 100 -work test -2002  $dsn/src/OA_I.vhd $dsn/src/OA_I_tb.vhd
+# Compile Entity "OA_I"
+# Compile Architecture "OA_I" of Entity "OA_I"
+# Compile Entity "OA_I_tb"
+# Compile Architecture "OA_I_tb" of Entity "OA_I_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  94.0 [ms]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6565 kB (elbread=427 elab2=5998 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\test\test\src\wave.asdb
+#  5:33 PM, Thursday, May 29, 2025
+#  Simulation has been i
